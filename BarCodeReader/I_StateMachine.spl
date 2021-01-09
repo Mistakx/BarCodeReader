@@ -1,0 +1,10 @@
+[Inputs]
+clock
+reset
+inputMoney
+[Outputs]
+=moneyEntered[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel I_StateMachine
+

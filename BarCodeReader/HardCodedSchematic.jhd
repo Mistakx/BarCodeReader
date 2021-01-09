@@ -1,0 +1,3 @@
+MODULE HardCodedSchematic
+	SUBMODULE I_StateMachine
+		INSTANCE XLXI_2
