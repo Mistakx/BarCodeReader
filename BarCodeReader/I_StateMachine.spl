@@ -1,7 +1,7 @@
 [Inputs]
 clock
 reset
-inputMoney
+=inputMoney[4:0]=
 [Outputs]
 =moneyEntered[1:0]=
 [BiDir]

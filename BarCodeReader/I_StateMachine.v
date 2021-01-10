@@ -21,7 +21,7 @@
 module I_StateMachine(clock, reset, inputMoney, moneyEntered);
 input clock;
 input reset;
-input inputMoney;
+input[4:0] inputMoney;
 reg[1:0] state; // State 0 - Begin,  State 1 - 10 Euros Entered, State 2 - 20 Euros Entered.
 output [1:0] moneyEntered; // 2'b01 - 10 Euros, 2'b10 - 20 Euros, 2'b11 - 30 Euros
 reg [1:0] moneyEntered;

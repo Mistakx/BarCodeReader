@@ -1,0 +1,4 @@
+verilog work "I_StateMachine.v"
+verilog work "HardCodedSchematic.vf"
+verilog work "TestFixture4.v"
+verilog work "C:/Tools/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
