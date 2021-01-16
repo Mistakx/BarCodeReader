@@ -18,38 +18,42 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module I_StateMachine(clock, reset, inputMoney, moneyEntered);
+module I_StateMachine(clock, reset, inputMoney, outputMoney);
 input clock;
 input reset;
 input[4:0] inputMoney;
 reg[1:0] state; // State 0 - Begin,  State 1 - 10 Euros Entered, State 2 - 20 Euros Entered.
-output [1:0] moneyEntered; // 2'b01 - 10 Euros, 2'b10 - 20 Euros, 2'b11 - 30 Euros
-reg [1:0] moneyEntered;
+output [1:0] outputMoney; // 2'b01 - 10 Euros, 2'b10 - 20 Euros, 2'b11 - 30 Euros
+reg [1:0] outputMoney;
 
 always@ (posedge clock or posedge reset)
 	begin
 		if (reset == 1'b1)
+			begin
 			state = 2'b00;
-			
+			outputMoney  = 2'b00;
+		end
+		
 		else
 			case (state)
 				
 				
 				// State 0 - Begin
 				2'b00:
-					
+									
 					// Input 10 Euros - Goes to state 1 - Has 10 Euros
 					if (inputMoney == 4'd10)
 						begin
 							state = 2'b01;
-							moneyEntered = 2'b01;
+							outputMoney = 2'b01;
 						end
+				
 						
 					// Input 20 Euros - Goes to state 2 - Has 20 Euros
 					else if (inputMoney == 5'd20)
 						begin
 							state = 2'b10;
-							moneyEntered = 2'b10;
+							outputMoney = 2'b10;
 						end
 						
 						
@@ -60,14 +64,14 @@ always@ (posedge clock or posedge reset)
 					if (inputMoney == 4'd10)
 						begin
 							state = 2'b10;
-							moneyEntered = 2'b10;
+							outputMoney = 2'b10;
 						end
 						
 					// Input 20 Euros - Goes back to stage 0 - Has 30 Euros
 					else if (inputMoney == 5'd20)
 						begin
 							state = 2'b00;
-							moneyEntered = 2'b11;
+							outputMoney = 2'b11;
 						end
 					
 					
@@ -75,10 +79,13 @@ always@ (posedge clock or posedge reset)
 				2'b10:
 				
 					// Input 10 Euros - Goes to state 0 - Has 30 Euros
-					begin
-						state = 2'b00;
-						moneyEntered = 2'b11;
-					end
+
+					if (inputMoney == 4'd10)
+						begin
+							state = 2'b00;
+							outputMoney = 2'b11;
+						end
+
 					
 			endcase
 	

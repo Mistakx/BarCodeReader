@@ -14,7 +14,7 @@ module HardCodedSchematic_HardCodedSchematic_sch_tb();
    wire FIM;
    wire DEZ;
    wire DOIS;
-   wire [1:0] moneyEntered;
+   wire [1:0] outputMoney;
 
 // Bidirs
 
@@ -26,7 +26,7 @@ module HardCodedSchematic_HardCodedSchematic_sch_tb();
 		.clock(clock), 
 		.reset(reset), 
 		.PG(PG), 
-		.moneyEntered(moneyEntered), 
+		.outputMoney(outputMoney), 
 		.I(I)
    );
 // Initialize Inputs
@@ -38,34 +38,34 @@ module HardCodedSchematic_HardCodedSchematic_sch_tb();
 		I = 0;
    `endif
 	
-		always #20 clock = !clock;
+		always #100 clock = !clock;
 	 
 	initial 
 		begin
 		PG = 0;
 		clock = 0;
-		reset = 0;
+		reset = 1;
 		I = 0;
 		
 		#100
-		PG = 1;
-		clock = 1;
-		reset = 1;
-		I = 1;
+		reset = 0;
+		I = 4'd10;
 		
 		#100
-		reset = 1;
-		clock = 0;
-		PG = 0;
 		I = 0;
 
 		#100
-		reset = 0;
-		I = 1;
+		I = 4'd10;
 
 		#100
 		I = 0;
-	 
+		
+		#100
+		I = 10;
+		
+		#100
+		I = 20;
+		
 	 
 		end
 	

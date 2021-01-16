@@ -5,5 +5,62 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 47: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 48: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 49: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 50: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 56: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 57: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 58: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 59: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 60: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 61: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 62: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 63: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 64: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 69: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 70: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 71: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 72: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 73: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Change.v" Line 74: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
 </messages>
 

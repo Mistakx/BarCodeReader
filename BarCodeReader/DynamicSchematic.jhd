@@ -1,1 +1,5 @@
 MODULE DynamicSchematic
+	SUBMODULE I_StateMachine
+		INSTANCE XLXI_2
+	SUBMODULE moneyEntered_minus_PG
+		INSTANCE XLXI_4

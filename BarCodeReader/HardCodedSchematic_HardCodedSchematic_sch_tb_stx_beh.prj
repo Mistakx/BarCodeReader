@@ -1,4 +1,0 @@
-verilog isim_temp "I_StateMachine.v"
-verilog isim_temp "HardCodedSchematic.vf"
-verilog isim_temp "TestFixture4.v"
-verilog isim_temp "C:/Tools/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

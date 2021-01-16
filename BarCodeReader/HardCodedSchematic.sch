@@ -14,6 +14,7 @@
         <signal name="PG" />
         <signal name="moneyEntered(1:0)" />
         <signal name="I(4:0)" />
+        <signal name="cancel" />
         <port polarity="Output" name="FIM" />
         <port polarity="Output" name="DEZ" />
         <port polarity="Output" name="DOIS" />
@@ -22,6 +23,7 @@
         <port polarity="Input" name="PG" />
         <port polarity="Output" name="moneyEntered(1:0)" />
         <port polarity="Input" name="I(4:0)" />
+        <port polarity="Input" name="cancel" />
         <blockdef name="I_StateMachine">
             <timestamp>2021-1-10T12:4:53</timestamp>
             <rect width="64" x="0" y="20" height="24" />
@@ -62,10 +64,6 @@
         <instance x="1168" y="1712" name="XLXI_2" orien="R0">
         </instance>
         <iomarker fontsize="28" x="672" y="1552" name="clock" orien="R180" />
-        <branch name="PG">
-            <wire x2="1056" y1="1360" y2="1360" x1="672" />
-        </branch>
-        <iomarker fontsize="28" x="672" y="1360" name="PG" orien="R180" />
         <branch name="moneyEntered(1:0)">
             <wire x2="1648" y1="1552" y2="1552" x1="1632" />
             <wire x2="1840" y1="1552" y2="1552" x1="1648" />
@@ -77,5 +75,13 @@
             <wire x2="1168" y1="1744" y2="1744" x1="1152" />
         </branch>
         <iomarker fontsize="28" x="672" y="1744" name="I(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="688" y="1200" name="cancel" orien="R180" />
+        <branch name="cancel">
+            <wire x2="1072" y1="1200" y2="1200" x1="688" />
+        </branch>
+        <iomarker fontsize="28" x="656" y="1360" name="PG" orien="R180" />
+        <branch name="PG">
+            <wire x2="1056" y1="1360" y2="1360" x1="656" />
+        </branch>
     </sheet>
 </drawing>

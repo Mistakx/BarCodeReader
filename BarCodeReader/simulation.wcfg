@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/HardCodedSchematic_HardCodedSchematic_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="HardCodedSchematic_HardCodedSchematic_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/FIM" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">FIM</obj_property>
+      <obj_property name="ObjectShortName">FIM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/DEZ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DEZ</obj_property>
+      <obj_property name="ObjectShortName">DEZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/DOIS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DOIS</obj_property>
+      <obj_property name="ObjectShortName">DOIS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/outputMoney" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outputMoney[1:0]</obj_property>
+      <obj_property name="ObjectShortName">outputMoney[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/PG" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PG</obj_property>
+      <obj_property name="ObjectShortName">PG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HardCodedSchematic_HardCodedSchematic_sch_tb/I" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I[4:0]</obj_property>
+      <obj_property name="ObjectShortName">I[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
