@@ -27,7 +27,6 @@
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Change.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Change.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Change_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="I_StateMachine.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="I_minus_PG.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Main_StateMachine.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Main_StateMachine.spl"/>
@@ -52,13 +51,9 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="CancelPayment.v"/>
-      <outfile xil_pn:name="Change.v"/>
-      <outfile xil_pn:name="I-PG.v"/>
-      <outfile xil_pn:name="I_StateMachine.v"/>
-      <outfile xil_pn:name="Main_StateMachine.v"/>
-      <outfile xil_pn:name="TestFixture4.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
