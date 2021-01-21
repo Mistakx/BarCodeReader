@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Difference.v -lang verilog -prj SD_Project2 -o Difference.spl -module Difference -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Difference.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Difference.sym 

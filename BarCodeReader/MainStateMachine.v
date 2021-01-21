@@ -5,7 +5,7 @@
 // 
 // Create Date:    15:08:27 01/16/2021 
 // Design Name: 
-// Module Name:    Main_StateMachine 
+// Module Name:    MainStateMachine 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Main_StateMachine(clock, reset, inputMoney, valueToPay, state);
+module MainStateMachine(clock, reset, inputMoney, valueToPay, state);
 
 input clock;
 input reset;
@@ -30,8 +30,8 @@ input [4:0] valueToPay;
 // State 010 - Money inserted in the machine was invalid
 // State 011 - Money inserted in the machine was valid
 // State 100 - If necessary, money was given back to the user
-output state;
-reg[2:0] state; // 5 states. 3 bits necessary no store the state value.
+output [2:0] state;
+reg [2:0] state; // 5 states. 3 bits necessary no store the state value.
 
 always@ (posedge clock or posedge reset)
 	begin
@@ -42,10 +42,14 @@ always@ (posedge clock or posedge reset)
 			
 				3'b000: if (inputMoney != 0) state = 3'b001;
 				
-				3'b001: 
+				3'b001:
+				
 					begin
+					
 						if ( (inputMoney == 5'd10) || (inputMoney == 5'd20) || (inputMoney == 5'd30) ) state = 3'b011;
+						
 						else state = 3'b010;
+					
 					end
 					
 				3'b010: state = 3'b100;

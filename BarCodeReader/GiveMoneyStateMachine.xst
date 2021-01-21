@@ -2,7 +2,7 @@ set -tmpdir "C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/xst/projnav.tm
 set -xsthdpdir "C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/xst"
 run -compileonly yes
 -p xc7a100t-3-csg324
--top Main_StateMachine
+-top GiveMoneyStateMachine
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -47,4 +47,4 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn Main_StateMachine.prj
+-ifn GiveMoneyStateMachine.prj

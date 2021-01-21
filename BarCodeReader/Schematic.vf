@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Schematic.vf
+// /___/   /\     Timestamp : 01/21/2021 12:13:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.sch
+//Design Name: Schematic
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Schematic(clock, 
+                 I, 
+                 PG, 
+                 reset, 
+                 DEZ, 
+                 DOIS, 
+                 FIM, 
+                 state);
+
+    input clock;
+    input [4:0] I;
+    input [4:0] PG;
+    input reset;
+   output DEZ;
+   output DOIS;
+   output FIM;
+   output [4:0] state;
+   
+   wire [4:0] XLXN_6;
+   
+   GiveMoneyStateMachine  XLXI_1 (.clock(clock), 
+                                 .moneyToGive(XLXN_6[4:0]), 
+                                 .reset(reset), 
+                                 .coin2Exits(DOIS), 
+                                 .noMoneyLeft(FIM), 
+                                 .note10Exits(DEZ), 
+                                 .state(state[4:0]));
+   Difference  XLXI_2 (.inputMoney(I[4:0]), 
+                      .valueToPay(PG[4:0]), 
+                      .difference(XLXN_6[4:0]));
+endmodule

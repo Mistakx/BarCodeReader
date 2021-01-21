@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family artix7 -verilog Schematic_drc.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.sch 
+sch2hdl -intstyle ise -family artix7 -verilog Schematic_drc.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.sch 
+sch2hdl -intstyle ise -family artix7 -verilog Schematic_drc.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.sch 

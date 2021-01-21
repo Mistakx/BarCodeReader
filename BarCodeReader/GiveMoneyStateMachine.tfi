@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+GiveMoneyStateMachine instance_name (
+    .clock(clock), 
+    .reset(reset), 
+    .valueToPay(valueToPay), 
+    .inputMoney(inputMoney), 
+    .coin2Exits(coin2Exits), 
+    .note10Exits(note10Exits), 
+    .noMoneyLeft(noMoneyLeft), 
+    .state(state)
+    );
+
+

@@ -58,12 +58,11 @@ module GiveMoney(clock, reset, valueToPay, inputMoney, coin2Exits, note10Exits, 
 
 		begin
 		
-			if (reset) state = 3'b001;
+			if (reset) state = 3'b1110;
 			
 			else
 			
 				case (state)
-					
 					4'b0000: // 0 Euros
 						noMoneyLeft = 1;
 					4'b0001: // 2 Euros

@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.61 secs
  
 --> Parameter xsthdpdir set to C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.61 secs
  
---> Reading design: Main_StateMachine.prj
+--> Reading design: GiveMoneyStateMachine.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,16 +39,16 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Mistakx\Desktop\BarCodeReader\BarCodeReader\Main_StateMachine.v" into library work
-Parsing module <Main_StateMachine>.
+Analyzing Verilog file "C:\Users\Mistakx\Desktop\BarCodeReader\BarCodeReader\GiveMoneyStateMachine.v" into library work
+Parsing module <GiveMoneyStateMachine>.
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.25 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.93 secs
  
 --> 
 
-Total memory usage is 4494756 kilobytes
+Total memory usage is 4494740 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

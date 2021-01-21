@@ -22,38 +22,93 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SD_Project2.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="CancelPayment.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CancelPayment.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Change.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Change.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Change_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Difference.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Difference.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Difference.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Difference.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Difference.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Difference_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GiveMoneyStateMachine.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="GiveMoneyStateMachine.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="GiveMoneyStateMachine.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="GiveMoneyStateMachine.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="GiveMoneyStateMachine.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="GiveMoneyStateMachine.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GiveMoneyStateMachine_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GiveMoneyStateMachine_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="I_minus_PG.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Main_StateMachine.prj"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Main_StateMachine.spl"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Main_StateMachine.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Main_StateMachine.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="Main_StateMachine.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Main_StateMachine_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Schematic.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Schematic_Schematic_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Schematic_Schematic_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Schematic_Schematic_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Schematic_Schematic_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Schematic_drc.vf"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="moneyEntered_minus_PG.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1610816620" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1610816620">
+    <transform xil_pn:end_ts="1611231380" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1611231380">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1610817478" xil_pn:in_ck="-2442747415832487102" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1610817478">
+    <transform xil_pn:end_ts="1611231991" xil_pn:in_ck="-9008158000412323227" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611231991">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="CancelPayment.v"/>
+      <outfile xil_pn:name="Difference.v"/>
+      <outfile xil_pn:name="GiveMoneyStateMachine.v"/>
+      <outfile xil_pn:name="MainStateMachine.v"/>
+      <outfile xil_pn:name="TestFixture7.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611231380" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1085943208021843210" xil_pn:start_ts="1611231380">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611231382" xil_pn:in_ck="-3971324942760560739" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="52210864751461928" xil_pn:start_ts="1611231380">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Schematic.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1611231382" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2544694714997344270" xil_pn:start_ts="1611231382">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611231991" xil_pn:in_ck="8285794882165628704" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611231991">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CancelPayment.v"/>
+      <outfile xil_pn:name="Difference.v"/>
+      <outfile xil_pn:name="GiveMoneyStateMachine.v"/>
+      <outfile xil_pn:name="MainStateMachine.v"/>
+      <outfile xil_pn:name="Schematic.vf"/>
+      <outfile xil_pn:name="TestFixture7.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611231994" xil_pn:in_ck="8285794882165628704" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2594539037185652547" xil_pn:start_ts="1611231991">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Schematic_Schematic_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="Schematic_Schematic_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1611231994" xil_pn:in_ck="-3692919876269918572" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6306758715574430438" xil_pn:start_ts="1611231994">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Schematic_Schematic_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
   </transforms>
 

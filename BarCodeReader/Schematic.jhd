@@ -1,0 +1,5 @@
+MODULE Schematic
+	SUBMODULE GiveMoneyStateMachine
+		INSTANCE XLXI_1
+	SUBMODULE Difference
+		INSTANCE XLXI_2
