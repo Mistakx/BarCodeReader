@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/Schematic_Schematic_sch_tb/message" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">message[207:0]</obj_property>
       <obj_property name="ObjectShortName">message[207:0]</obj_property>
@@ -28,14 +28,14 @@
       <obj_property name="ElementShortName">DOIS</obj_property>
       <obj_property name="ObjectShortName">DOIS</obj_property>
    </wvobject>
-   <wvobject fp_name="/Schematic_Schematic_sch_tb/mainState" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">mainState[2:0]</obj_property>
-      <obj_property name="ObjectShortName">mainState[2:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/Schematic_Schematic_sch_tb/moneyState" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">moneyState[4:0]</obj_property>
       <obj_property name="ObjectShortName">moneyState[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Schematic_Schematic_sch_tb/mainState" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mainState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mainState[2:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Schematic_Schematic_sch_tb/moneyToGive" type="array" db_ref_id="1">
@@ -52,10 +52,6 @@
       <obj_property name="ElementShortName">PG[4:0]</obj_property>
       <obj_property name="ObjectShortName">PG[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Schematic_Schematic_sch_tb/mainReset" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">mainReset</obj_property>
-      <obj_property name="ObjectShortName">mainReset</obj_property>
    </wvobject>
    <wvobject fp_name="/Schematic_Schematic_sch_tb/reset" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">reset</obj_property>

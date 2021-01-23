@@ -55,30 +55,33 @@ module Schematic_Schematic_sch_tb();
 			clock = 0;
 			reset = 1;
 			I = 0;
-			
+				
 			#1
 			reset = 0;
 
 			#1
+			I = 10;
+			PG = 31;
+			
+			#6
+			I = 0;
+			PG = 0;
+
+			#30
+			I = 20;
+			PG = 31;
+			
+			#6
+			I = 0;
+			PG = 0;
+
+			#30
 			I = 30;
-			PG = 2;
-
-         #15
-         I = 0;
-         PG = 0;
-
-         #15
-         I = 15
-         PG = 2;
-
-         #15
-         I = 0;
-         PG = 0;
-
-         #15
-         I = 15;
-         PG = 2;
-         
+			PG = 31;  
+			
+			#6
+			I = 0;
+			PG = 0;
 			
 		end
       

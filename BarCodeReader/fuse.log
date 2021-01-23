@@ -7,7 +7,7 @@ Analyzing Verilog file "E:/BarCodeReader/BarCodeReader/MoneyToGive.v" into libra
 Analyzing Verilog file "E:/BarCodeReader/BarCodeReader/MainStateMachine.v" into library work
 Analyzing Verilog file "E:/BarCodeReader/BarCodeReader/GiveMoneyStateMachine.v" into library work
 Analyzing Verilog file "E:/BarCodeReader/BarCodeReader/Schematic.vf" into library work
-Analyzing Verilog file "E:/BarCodeReader/BarCodeReader/ProfessorMorgadoFixture.v" into library work
+Analyzing Verilog file "E:/BarCodeReader/BarCodeReader/Fixture13.v" into library work
 Analyzing Verilog file "C:/Tools/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
@@ -21,5 +21,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 Verilog Units
 Built simulation executable E:/BarCodeReader/BarCodeReader/Schematic_Schematic_sch_tb_isim_beh.exe
-Fuse Memory Usage: 28256 KB
-Fuse CPU Usage: 656 ms
+Fuse Memory Usage: 28020 KB
+Fuse CPU Usage: 718 ms

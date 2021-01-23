@@ -319,7 +319,7 @@ LAB52:    xsi_set_current_line(115, ng0);
     t3 = (t0 + 1928);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(117, ng0);
-    t2 = ((char*)((ng2)));
+    t2 = ((char*)((ng3)));
     t3 = (t0 + 2248);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 5);
     goto LAB45;

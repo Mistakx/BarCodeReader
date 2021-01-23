@@ -72,15 +72,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611432097" xil_pn:in_ck="-9207033880967646572" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611432097">
+    <transform xil_pn:end_ts="1611442089" xil_pn:in_ck="5600034607807151308" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611442089">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Fixture13.v"/>
+      <outfile xil_pn:name="FixtureProfessorMorgado.v"/>
+      <outfile xil_pn:name="GiveMoneyStateMachine.v"/>
+      <outfile xil_pn:name="MainStateMachine.v"/>
+      <outfile xil_pn:name="MoneyToGive.v"/>
     </transform>
     <transform xil_pn:end_ts="1611431792" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1085943208021843210" xil_pn:start_ts="1611431792">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -95,37 +94,32 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611432097" xil_pn:in_ck="-7674156179021130353" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611432097">
+    <transform xil_pn:end_ts="1611442089" xil_pn:in_ck="9056927562477466567" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611442089">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Fixture13.v"/>
+      <outfile xil_pn:name="FixtureProfessorMorgado.v"/>
+      <outfile xil_pn:name="GiveMoneyStateMachine.v"/>
+      <outfile xil_pn:name="MainStateMachine.v"/>
+      <outfile xil_pn:name="MoneyToGive.v"/>
+      <outfile xil_pn:name="Schematic.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1611432101" xil_pn:in_ck="-7674156179021130353" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2594539037185652547" xil_pn:start_ts="1611432097">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1611432101" xil_pn:in_ck="-1825236550107638366" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6306758715574430438" xil_pn:start_ts="1611432101">
+    <transform xil_pn:end_ts="1611442093" xil_pn:in_ck="9056927562477466567" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2594539037185652547" xil_pn:start_ts="1611442089">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Schematic_Schematic_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="Schematic_Schematic_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1611442094" xil_pn:in_ck="-1825236550107638366" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6306758715574430438" xil_pn:start_ts="1611442093">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Schematic_Schematic_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
   </transforms>
 

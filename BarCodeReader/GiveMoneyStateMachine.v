@@ -114,7 +114,7 @@ module GiveMoneyStateMachine(clock, reset, moneyToGive, coin2Exits, note10Exits,
 						begin
 							coin2Exits = 0;
 							note10Exits = 1;
-							state = 5'd0;
+							state = 5'd31;
 						end  
 
 					5'd12: // 12 Euros

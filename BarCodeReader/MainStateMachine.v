@@ -64,14 +64,14 @@ always @ (posedge clock or posedge reset)
 						message = "Esperando moedas...";
 						if (inputMoney != 0) mainState = 3'd1;
 					end
-					
+
 				3'd1:
 					begin
 						message = "Valor inserido.";
 
 						// * Valid money input by the user
-						// Move to state 3 only if the user inputs either 10, 20 or 30 euros, and inputs enough money to pay.
-						if ( ((inputMoney == 5'd10) || (inputMoney == 5'd20) || (inputMoney == 5'd30)) && (inputMoney >= valueToPay) ) mainState = 3'd3;
+						// Move to state 3 only if the user inputs enough money to pay.
+						if (inputMoney >= valueToPay) mainState = 3'd3;
 
 						// * Invalid money input by the user
 						// Move to state 2 if the user hasn't input a valid money amount

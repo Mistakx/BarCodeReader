@@ -2,14 +2,14 @@ Command line:
    Schematic_Schematic_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51353
+     -socket  52803
 
-Sat Jan 23 20:01:43 2021
+Sat Jan 23 22:48:17 2021
 
 
  Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5149.54 Meg
+ Current Memory Usage: 5149.56 Meg
 
  Total Signals          : 47
  Total Nets             : 258
@@ -19,11 +19,11 @@ Sat Jan 23 20:01:43 2021
  Total Processes        : 25
  Total Traceable Variables  : 29
  Total Scalar Nets and Variables : 574
-Total Line Count : 181
+Total Line Count : 155
 
  Total Simulation Time: 0.0625 sec
 
- Current Memory Usage: 4677.68 Meg
+ Current Memory Usage: 4992.27 Meg
 
-Sat Jan 23 20:04:00 2021
+Sat Jan 23 22:49:40 2021
 
