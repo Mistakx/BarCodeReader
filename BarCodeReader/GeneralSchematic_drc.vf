@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : GeneralSchematic_drc.vf
+// /___/   /\     Timestamp : 01/22/2021 21:31:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Tools\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family artix7 -verilog GeneralSchematic_drc.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/GeneralSchematic.sch
+//Design Name: GeneralSchematic
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module GeneralSchematic(clock, 
+                        I, 
+                        mainReset, 
+                        PG, 
+                        mainState);
+
+    input clock;
+    input [4:0] I;
+    input mainReset;
+    input [4:0] PG;
+   output [2:0] mainState;
+   
+   
+   MainStateMachine  XLXI_1 (.clock(clock), 
+                            .inputMoney(I[4:0]), 
+                            .reset(mainReset), 
+                            .valueToPay(PG[4:0]), 
+                            .state(mainState[2:0]));
+endmodule

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family artix7 -refsym GeneralSchematic C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/GeneralSchematic.sch C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/GeneralSchematic.sym 
+sch2hdl -intstyle ise -family artix7 -verilog GeneralSchematic_drc.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/GeneralSchematic.sch 

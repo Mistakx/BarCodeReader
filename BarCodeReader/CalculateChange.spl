@@ -1,0 +1,10 @@
+[Inputs]
+=mainState[2:0]=
+=inputMoney[4:0]=
+=valueToPay[4:0]=
+[Outputs]
+=change[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel CalculateChange
+

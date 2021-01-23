@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Parameter xsthdpdir set to C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Reading design: Difference.prj
 
@@ -43,8 +43,8 @@ Analyzing Verilog file "C:\Users\Mistakx\Desktop\BarCodeReader\BarCodeReader\Dif
 Parsing module <Difference>.
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.94 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.78 secs
  
 --> 
 

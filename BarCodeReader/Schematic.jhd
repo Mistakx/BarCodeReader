@@ -1,5 +1,7 @@
 MODULE Schematic
 	SUBMODULE GiveMoneyStateMachine
 		INSTANCE XLXI_1
-	SUBMODULE Difference
-		INSTANCE XLXI_2
+	SUBMODULE MainStateMachine
+		INSTANCE XLXI_3
+	SUBMODULE MoneyToGive
+		INSTANCE XLXI_8

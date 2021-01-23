@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="GiveMoneyStateMachine">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2021-1-21T12:12:15</timestamp>
+    <timestamp>2021-1-22T23:35:6</timestamp>
     <attr value="GiveMoneyStateMachine" name="VeriModel" />
     <pin polarity="Input" x="0" y="-224" name="clock" />
     <pin polarity="Input" x="0" y="-160" name="reset" />

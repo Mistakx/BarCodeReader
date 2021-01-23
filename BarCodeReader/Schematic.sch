@@ -6,25 +6,44 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="FIM" />
-        <signal name="DEZ" />
+        <signal name="XLXN_94" />
+        <signal name="XLXN_96" />
         <signal name="DOIS" />
-        <signal name="reset" />
-        <signal name="clock" />
-        <signal name="state(4:0)" />
-        <signal name="XLXN_6(4:0)" />
         <signal name="I(4:0)" />
         <signal name="PG(4:0)" />
-        <port polarity="Output" name="FIM" />
-        <port polarity="Output" name="DEZ" />
+        <signal name="XLXN_100" />
+        <signal name="FIM" />
+        <signal name="DEZ" />
+        <signal name="clock" />
+        <signal name="moneyState(4:0)" />
+        <signal name="moneyToGive(4:0)" />
+        <signal name="XLXN_106(4:0)" />
+        <signal name="mainState(2:0)" />
+        <signal name="message(207:0)" />
+        <signal name="XLXN_109" />
+        <signal name="reset" />
+        <signal name="XLXN_111" />
+        <signal name="XLXN_112(4:0)" />
+        <signal name="XLXN_113" />
+        <signal name="XLXN_114" />
+        <signal name="XLXN_115" />
+        <signal name="XLXN_116(4:0)" />
+        <signal name="XLXN_117" />
+        <signal name="XLXN_118" />
+        <signal name="XLXN_119(4:0)" />
         <port polarity="Output" name="DOIS" />
-        <port polarity="Input" name="reset" />
-        <port polarity="Input" name="clock" />
-        <port polarity="Output" name="state(4:0)" />
         <port polarity="Input" name="I(4:0)" />
         <port polarity="Input" name="PG(4:0)" />
+        <port polarity="Output" name="FIM" />
+        <port polarity="Output" name="DEZ" />
+        <port polarity="Input" name="clock" />
+        <port polarity="Output" name="moneyState(4:0)" />
+        <port polarity="Output" name="moneyToGive(4:0)" />
+        <port polarity="Output" name="mainState(2:0)" />
+        <port polarity="Output" name="message(207:0)" />
+        <port polarity="Input" name="reset" />
         <blockdef name="GiveMoneyStateMachine">
-            <timestamp>2021-1-21T12:12:15</timestamp>
+            <timestamp>2021-1-22T23:35:6</timestamp>
             <rect width="64" x="0" y="84" height="24" />
             <line x2="0" y1="96" y2="96" x1="64" />
             <rect width="64" x="384" y="20" height="24" />
@@ -36,76 +55,140 @@
             <line x2="448" y1="-32" y2="-32" x1="384" />
             <rect width="320" x="64" y="-256" height="384" />
         </blockdef>
-        <blockdef name="Difference">
-            <timestamp>2021-1-21T0:27:15</timestamp>
-            <rect width="336" x="64" y="-128" height="128" />
+        <blockdef name="MainStateMachine">
+            <timestamp>2021-1-23T17:11:52</timestamp>
+            <rect width="64" x="352" y="148" height="24" />
+            <line x2="416" y1="160" y2="160" x1="352" />
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <rect width="64" x="352" y="20" height="24" />
+            <line x2="416" y1="32" y2="32" x1="352" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="400" y="-108" height="24" />
-            <line x2="464" y1="-96" y2="-96" x1="400" />
+            <rect width="288" x="64" y="-256" height="448" />
         </blockdef>
+        <blockdef name="MoneyToGive">
+            <timestamp>2021-1-23T18:19:39</timestamp>
+            <line x2="0" y1="160" y2="160" x1="64" />
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="256" x="64" y="-256" height="448" />
+        </blockdef>
+        <block symbolname="MainStateMachine" name="XLXI_3">
+            <blockpin signalname="clock" name="clock" />
+            <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="FIM" name="noMoneyLeft" />
+            <blockpin signalname="I(4:0)" name="inputMoney(4:0)" />
+            <blockpin signalname="PG(4:0)" name="valueToPay(4:0)" />
+            <blockpin signalname="mainState(2:0)" name="mainState(2:0)" />
+            <blockpin signalname="message(207:0)" name="message(207:0)" />
+        </block>
+        <block symbolname="MoneyToGive" name="XLXI_8">
+            <blockpin signalname="clock" name="clock" />
+            <blockpin signalname="mainState(2:0)" name="mainState(2:0)" />
+            <blockpin signalname="I(4:0)" name="inputMoney(4:0)" />
+            <blockpin signalname="PG(4:0)" name="valueToPay(4:0)" />
+            <blockpin signalname="moneyToGive(4:0)" name="moneyToGive(4:0)" />
+            <blockpin signalname="reset" name="reset" />
+        </block>
         <block symbolname="GiveMoneyStateMachine" name="XLXI_1">
             <blockpin signalname="clock" name="clock" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="XLXN_6(4:0)" name="moneyToGive(4:0)" />
+            <blockpin signalname="moneyToGive(4:0)" name="moneyToGive(4:0)" />
             <blockpin signalname="DOIS" name="coin2Exits" />
             <blockpin signalname="DEZ" name="note10Exits" />
             <blockpin signalname="FIM" name="noMoneyLeft" />
-            <blockpin signalname="state(4:0)" name="state(4:0)" />
-        </block>
-        <block symbolname="Difference" name="XLXI_2">
-            <blockpin signalname="I(4:0)" name="inputMoney(4:0)" />
-            <blockpin signalname="PG(4:0)" name="valueToPay(4:0)" />
-            <blockpin signalname="XLXN_6(4:0)" name="difference(4:0)" />
+            <blockpin signalname="moneyState(4:0)" name="state(4:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <iomarker fontsize="28" x="2832" y="1392" name="FIM" orien="R0" />
-        <branch name="FIM">
-            <wire x2="2816" y1="1392" y2="1392" x1="2016" />
-            <wire x2="2832" y1="1392" y2="1392" x1="2816" />
-        </branch>
-        <iomarker fontsize="28" x="2832" y="1200" name="DOIS" orien="R0" />
         <branch name="DOIS">
-            <wire x2="2816" y1="1200" y2="1200" x1="2016" />
-            <wire x2="2832" y1="1200" y2="1200" x1="2816" />
+            <wire x2="1552" y1="992" y2="992" x1="1424" />
         </branch>
-        <iomarker fontsize="28" x="2832" y="1296" name="DEZ" orien="R0" />
+        <branch name="I(4:0)">
+            <wire x2="1872" y1="752" y2="752" x1="784" />
+            <wire x2="2016" y1="752" y2="752" x1="1872" />
+            <wire x2="1872" y1="752" y2="1280" x1="1872" />
+            <wire x2="2544" y1="1280" y2="1280" x1="1872" />
+        </branch>
+        <branch name="PG(4:0)">
+            <wire x2="1808" y1="816" y2="816" x1="816" />
+            <wire x2="2016" y1="816" y2="816" x1="1808" />
+            <wire x2="1808" y1="816" y2="1344" x1="1808" />
+            <wire x2="2544" y1="1344" y2="1344" x1="1808" />
+        </branch>
+        <instance x="2016" y="848" name="XLXI_3" orien="R0">
+        </instance>
+        <branch name="FIM">
+            <wire x2="1984" y1="1184" y2="1184" x1="1424" />
+            <wire x2="2032" y1="1184" y2="1184" x1="1984" />
+            <wire x2="2016" y1="944" y2="944" x1="1984" />
+            <wire x2="1984" y1="944" y2="1184" x1="1984" />
+        </branch>
         <branch name="DEZ">
-            <wire x2="2816" y1="1296" y2="1296" x1="2016" />
-            <wire x2="2832" y1="1296" y2="1296" x1="2816" />
-        </branch>
-        <branch name="reset">
-            <wire x2="1088" y1="1264" y2="1264" x1="1072" />
-            <wire x2="1568" y1="1264" y2="1264" x1="1088" />
+            <wire x2="1552" y1="1088" y2="1088" x1="1424" />
         </branch>
         <branch name="clock">
-            <wire x2="1088" y1="1200" y2="1200" x1="1072" />
-            <wire x2="1568" y1="1200" y2="1200" x1="1088" />
+            <wire x2="864" y1="624" y2="624" x1="784" />
+            <wire x2="1728" y1="624" y2="624" x1="864" />
+            <wire x2="2016" y1="624" y2="624" x1="1728" />
+            <wire x2="1728" y1="624" y2="1472" x1="1728" />
+            <wire x2="2544" y1="1472" y2="1472" x1="1728" />
+            <wire x2="864" y1="624" y2="992" x1="864" />
+            <wire x2="976" y1="992" y2="992" x1="864" />
         </branch>
-        <iomarker fontsize="28" x="1072" y="1200" name="clock" orien="R180" />
-        <iomarker fontsize="28" x="1072" y="1264" name="reset" orien="R180" />
-        <instance x="1568" y="1424" name="XLXI_1" orien="R0">
+        <branch name="moneyState(4:0)">
+            <wire x2="1472" y1="1248" y2="1248" x1="1424" />
+        </branch>
+        <branch name="moneyToGive(4:0)">
+            <wire x2="976" y1="1312" y2="1312" x1="896" />
+            <wire x2="896" y1="1312" y2="1696" x1="896" />
+            <wire x2="3008" y1="1696" y2="1696" x1="896" />
+            <wire x2="3008" y1="1408" y2="1408" x1="2928" />
+            <wire x2="3072" y1="1408" y2="1408" x1="3008" />
+            <wire x2="3008" y1="1408" y2="1696" x1="3008" />
+        </branch>
+        <branch name="mainState(2:0)">
+            <wire x2="2496" y1="880" y2="880" x1="2432" />
+            <wire x2="2592" y1="880" y2="880" x1="2496" />
+            <wire x2="2496" y1="880" y2="1216" x1="2496" />
+            <wire x2="2544" y1="1216" y2="1216" x1="2496" />
+        </branch>
+        <instance x="2544" y="1376" name="XLXI_8" orien="R0">
         </instance>
-        <branch name="state(4:0)">
-            <wire x2="2384" y1="1456" y2="1456" x1="2016" />
-            <wire x2="2400" y1="1456" y2="1456" x1="2384" />
+        <branch name="message(207:0)">
+            <wire x2="2592" y1="1008" y2="1008" x1="2432" />
         </branch>
-        <iomarker fontsize="28" x="2400" y="1456" name="state(4:0)" orien="R0" />
-        <branch name="XLXN_6(4:0)">
-            <wire x2="1568" y1="1520" y2="1520" x1="1488" />
+        <branch name="reset">
+            <wire x2="640" y1="688" y2="688" x1="560" />
+            <wire x2="2016" y1="688" y2="688" x1="640" />
+            <wire x2="640" y1="688" y2="1056" x1="640" />
+            <wire x2="976" y1="1056" y2="1056" x1="640" />
+            <wire x2="640" y1="1056" y2="1536" x1="640" />
+            <wire x2="2544" y1="1536" y2="1536" x1="640" />
         </branch>
-        <instance x="1024" y="1616" name="XLXI_2" orien="R0">
+        <iomarker fontsize="28" x="816" y="816" name="PG(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="784" y="752" name="I(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="784" y="624" name="clock" orien="R180" />
+        <iomarker fontsize="28" x="2592" y="880" name="mainState(2:0)" orien="R0" />
+        <iomarker fontsize="28" x="3072" y="1408" name="moneyToGive(4:0)" orien="R0" />
+        <iomarker fontsize="28" x="2592" y="1008" name="message(207:0)" orien="R0" />
+        <instance x="976" y="1216" name="XLXI_1" orien="R0">
         </instance>
-        <branch name="I(4:0)">
-            <wire x2="1024" y1="1520" y2="1520" x1="560" />
-        </branch>
-        <iomarker fontsize="28" x="560" y="1520" name="I(4:0)" orien="R180" />
-        <branch name="PG(4:0)">
-            <wire x2="1024" y1="1584" y2="1584" x1="592" />
-        </branch>
-        <iomarker fontsize="28" x="592" y="1584" name="PG(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="1552" y="992" name="DOIS" orien="R0" />
+        <iomarker fontsize="28" x="1552" y="1088" name="DEZ" orien="R0" />
+        <iomarker fontsize="28" x="1472" y="1248" name="moneyState(4:0)" orien="R0" />
+        <iomarker fontsize="28" x="2032" y="1184" name="FIM" orien="R0" />
+        <iomarker fontsize="28" x="560" y="688" name="reset" orien="R180" />
     </sheet>
 </drawing>

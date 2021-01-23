@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Schematic.vf
-// /___/   /\     Timestamp : 01/21/2021 12:13:16
+// /___/   /\     Timestamp : 01/23/2021 19:04:59
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.vf -w C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic.sch
+//Command: sch2hdl -intstyle ise -family artix7 -verilog E:/BarCodeReader/BarCodeReader/Schematic.vf -w E:/BarCodeReader/BarCodeReader/Schematic.sch
 //Design Name: Schematic
 //Device: artix7
 //Purpose:
@@ -27,7 +27,10 @@ module Schematic(clock,
                  DEZ, 
                  DOIS, 
                  FIM, 
-                 state);
+                 mainState, 
+                 message, 
+                 moneyState, 
+                 moneyToGive);
 
     input clock;
     input [4:0] I;
@@ -36,18 +39,36 @@ module Schematic(clock,
    output DEZ;
    output DOIS;
    output FIM;
-   output [4:0] state;
+   output [2:0] mainState;
+   output [207:0] message;
+   output [4:0] moneyState;
+   output [4:0] moneyToGive;
    
-   wire [4:0] XLXN_6;
+   wire FIM_DUMMY;
+   wire [2:0] mainState_DUMMY;
+   wire [4:0] moneyToGive_DUMMY;
    
+   assign FIM = FIM_DUMMY;
+   assign mainState[2:0] = mainState_DUMMY[2:0];
+   assign moneyToGive[4:0] = moneyToGive_DUMMY[4:0];
    GiveMoneyStateMachine  XLXI_1 (.clock(clock), 
-                                 .moneyToGive(XLXN_6[4:0]), 
+                                 .moneyToGive(moneyToGive_DUMMY[4:0]), 
                                  .reset(reset), 
                                  .coin2Exits(DOIS), 
-                                 .noMoneyLeft(FIM), 
+                                 .noMoneyLeft(FIM_DUMMY), 
                                  .note10Exits(DEZ), 
-                                 .state(state[4:0]));
-   Difference  XLXI_2 (.inputMoney(I[4:0]), 
-                      .valueToPay(PG[4:0]), 
-                      .difference(XLXN_6[4:0]));
+                                 .state(moneyState[4:0]));
+   MainStateMachine  XLXI_3 (.clock(clock), 
+                            .inputMoney(I[4:0]), 
+                            .noMoneyLeft(FIM_DUMMY), 
+                            .reset(reset), 
+                            .valueToPay(PG[4:0]), 
+                            .mainState(mainState_DUMMY[2:0]), 
+                            .message(message[207:0]));
+   MoneyToGive  XLXI_8 (.clock(clock), 
+                       .inputMoney(I[4:0]), 
+                       .mainState(mainState_DUMMY[2:0]), 
+                       .reset(reset), 
+                       .valueToPay(PG[4:0]), 
+                       .moneyToGive(moneyToGive_DUMMY[4:0]));
 endmodule

@@ -1,0 +1,3 @@
+MODULE GeneralSchematic
+	SUBMODULE MainStateMachine
+		INSTANCE XLXI_1

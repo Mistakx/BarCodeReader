@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.61 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Parameter xsthdpdir set to C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.61 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Reading design: GiveMoneyStateMachine.prj
 
@@ -43,8 +43,8 @@ Analyzing Verilog file "C:\Users\Mistakx\Desktop\BarCodeReader\BarCodeReader\Giv
 Parsing module <GiveMoneyStateMachine>.
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.93 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.03 secs
  
 --> 
 

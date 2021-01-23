@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Schematic_drc.vf
-// /___/   /\     Timestamp : 01/20/2021 22:40:51
+// /___/   /\     Timestamp : 01/22/2021 21:32:06
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -22,29 +22,41 @@
 
 module Schematic(clock, 
                  I, 
+                 mainReset, 
                  PG, 
                  reset, 
                  DEZ, 
                  DOIS, 
                  FIM, 
-                 state);
+                 mainState, 
+                 moneyState);
 
     input clock;
     input [4:0] I;
+    input mainReset;
     input [4:0] PG;
     input reset;
    output DEZ;
    output DOIS;
    output FIM;
-   output [3:0] state;
+   output [2:0] mainState;
+   output [4:0] moneyState;
    
+   wire [4:0] XLXN_6;
    
    GiveMoneyStateMachine  XLXI_1 (.clock(clock), 
-                                 .inputMoney(I[4:0]), 
+                                 .moneyToGive(XLXN_6[4:0]), 
                                  .reset(reset), 
-                                 .valueToPay(PG[4:0]), 
                                  .coin2Exits(DOIS), 
                                  .noMoneyLeft(FIM), 
                                  .note10Exits(DEZ), 
-                                 .state(state[3:0]));
+                                 .state(moneyState[4:0]));
+   Difference  XLXI_2 (.inputMoney(I[4:0]), 
+                      .valueToPay(PG[4:0]), 
+                      .difference(XLXN_6[4:0]));
+   MainStateMachine  XLXI_3 (.clock(clock), 
+                            .inputMoney(I[4:0]), 
+                            .reset(mainReset), 
+                            .valueToPay(PG[4:0]), 
+                            .state(mainState[2:0]));
 endmodule

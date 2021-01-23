@@ -1,0 +1,10 @@
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MainStateMachine.v -lang verilog -prj SD_Project2 -o MainStateMachine.spl -module MainStateMachine -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MainStateMachine.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MainStateMachine.sym 
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MainStateMachine.v -lang verilog -prj SD_Project2 -o MainStateMachine.spl -module MainStateMachine -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MainStateMachine.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MainStateMachine.sym 
+vhdtdtfi -lib work E:/BarCodeReader/BarCodeReader/MainStateMachine.v -lang verilog -prj SD_Project2 -o MainStateMachine.spl -module MainStateMachine -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MainStateMachine.spl E:/BarCodeReader/BarCodeReader/MainStateMachine.sym 
+vhdtdtfi -lib work E:/BarCodeReader/BarCodeReader/MainStateMachine.v -lang verilog -prj SD_Project2 -o MainStateMachine.spl -module MainStateMachine -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MainStateMachine.spl E:/BarCodeReader/BarCodeReader/MainStateMachine.sym 
+vhdtdtfi -lib work E:/BarCodeReader/BarCodeReader/MainStateMachine.v -lang verilog -prj SD_Project2 -o MainStateMachine.spl -module MainStateMachine -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MainStateMachine.spl E:/BarCodeReader/BarCodeReader/MainStateMachine.sym 

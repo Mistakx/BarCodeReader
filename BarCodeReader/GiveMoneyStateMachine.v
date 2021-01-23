@@ -34,31 +34,19 @@ module GiveMoneyStateMachine(clock, reset, moneyToGive, coin2Exits, note10Exits,
 	
 	output state;
 	reg [4:0] state; // 17 different states of money still to give.
-	// An alternative would be to represent every state as the respective number in euros. Ex: 16 state, 16 euros left.
 	
-	// States
-	// 00000 = Waiting for start state
-	// 10000 = End state
-	// 00001 = 2 Euros left to give
-	// 00010 = 4 Euros left to give
-	// 00011 = 6 Euros left to give
-	// 00100 = 8 Euros left to give
-	// 00101 = 10 Euros left to give
-	// 00110 = 12 Euros left to give
-	// 00111 = 14 Euros left to give
-	// 01000 = 16 Euros left to give
-	// 01001 = 18 Euros left to give
-	// 01010 = 20 Euros left to give
-	// 01011 = 22 Euros left to give
-	// 01100 = 24 Euros left to give
-	// 01101 = 26 Euros left to give
-	// 01110 = 28 Euros left to give
-	
-	// 01111 = 30 Euros  left to give 
+	// State 0 - Waiting for machine start
+
+	// State 31 - Since the machine won't need to give 31 euros,
+	// we use this state as the end state, to represent that there is no more money left to give.
+
+	// State 30 = 30 Euros left to give 
 	// Since the maximum value that a user has to pay is 28,
 	// this last state is not needed to solve the problem that was given.
 	// Nonetheless, we decided to use this state in case the user enters 30 euros,
 	// and an error ocurrs in the machine, giving the user it's 30 euros back.
+
+
 	
 	always @ (posedge clock or posedge reset)
 
@@ -67,175 +55,136 @@ module GiveMoneyStateMachine(clock, reset, moneyToGive, coin2Exits, note10Exits,
 			if (reset)
 			
 				begin
-				
-					state = 5'b0000;
 					coin2Exits = 0;
 					note10Exits = 0;
 					noMoneyLeft = 0;
-					
+					state = 5'd0;
 				end
 			
 			else
 			
 				case (state)
 				
-					5'b00000: // Waiting for start
-					
+					5'd0: // Waiting for start
 						begin
 						
 							noMoneyLeft = 0;
 							coin2Exits = 0;
 							note10Exits = 0;
-							
-							case(moneyToGive)
-							
-								5'd0: state = 5'b00000;
-									
-								5'd2: state = 5'b00001;
-
-								5'd4: state = 5'b00010;
-
-								5'd6: state = 5'b00011;
-
-								5'd8: state = 5'b00100;
-
-								5'd10: state = 5'b00101;
-
-								5'd12: state = 5'b00110;
-
-								5'd14: state = 5'b00111;
-
-								5'd16: state = 5'b01000;
-
-								5'd18: state = 5'b01001;
-
-								5'd20: state = 5'b01010;
-
-								5'd22: state = 5'b01011;
-
-								5'd24: state = 5'b01100;
-
-								5'd26: state = 5'b01101;
-
-								5'd28: state = 5'b01110;
-
-								5'd30: state = 5'b01111;
-									
-							endcase										
-							
+							state = moneyToGive;
 						end
 
-					5'b10000: // No money left to give
+					5'd31: // No money left to give
 						begin
-							state = 5'b00000;
 							noMoneyLeft = 1;
 							coin2Exits = 0;
 							note10Exits = 0;
+							state = 5'd0;
 						end
 
-					5'b00001: // 2 Euros
+					5'd2: // 2 Euros
 						begin
-							state = 5'b10000;
 							coin2Exits = 1;
 							note10Exits = 0;
+							state = 5'd31;
 						end 
 
-					5'b00010: // 4 Euros
+					5'd4: // 4 Euros
 						begin
-							state = 5'b00001;
 							coin2Exits = 1;
 							note10Exits = 0;
+							state = 5'd2;
 						end 
 
-					5'b00011: // 6 Euros
+					5'd6: // 6 Euros
 						begin
-							state = 5'b00010;
 							coin2Exits = 1;
 							note10Exits = 0;
+							state = 5'd4;
 						end 
 
-					5'b00100: // 8 Euros
+					5'd8: // 8 Euros
 						begin
-							state = 5'b00011;
 							coin2Exits = 1;
 							note10Exits = 0;
+							state = 5'd6;
 						end 
 
-					5'b00101: // 10 Euros
+					5'd10: // 10 Euros
 						begin
-							state = 5'b10000;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd0;
 						end  
 
-					5'b00110: // 12 Euros
+					5'd12: // 12 Euros
 						begin
-							state = 5'b00001;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd2;
 						end  
 					
-					5'b00111: // 14 Euros
+					5'd14: // 14 Euros
 						begin
-							state = 5'b00010;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd4;
 						end  
 
-					5'b01000: // 16 Euros
+					5'd16: // 16 Euros
 						begin
-							state = 5'b00011;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd6;
 						end  
 
-					5'b01001: // 18 Euros
+					5'd18: // 18 Euros
 						begin
-							state = 5'b00100;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd8;
 						end 
 
-					5'b01010: // 20 Euros
+					5'd20: // 20 Euros
 						begin
-							state = 5'b00101;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd10;
 						end
 
-					5'b01011: // 22 Euros
+					5'd22: // 22 Euros
 						begin
-							state = 5'b00110;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd12;
 						end 
 
-					5'b01100: // 24 Euros
+					5'd24: // 24 Euros
 						begin
-							state = 5'b00111;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd14;
 						end
 
-					5'b01101: // 26 Euros
+					5'd26: // 26 Euros
 						begin
-							state = 5'b01000;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd16;
 						end  
 
-					5'b01110: // 28 Euros
+					5'd28: // 28 Euros
 						begin
-							state = 5'b01001;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd18;
 						end
 					
-					5'b01111: // 30 Euros
+					5'd30: // 30 Euros
 						begin
-							state = 5'b01010;
 							coin2Exits = 0;
 							note10Exits = 1;
+							state = 5'd20;
 						end
 				
 				endcase

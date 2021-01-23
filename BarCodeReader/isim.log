@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Mistakx\Desktop\BarCodeReader\BarCodeReader\Schematic_Schematic_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/Schematic_Schematic_sch_tb_isim_beh.wdb 
+Running: E:\BarCodeReader\BarCodeReader\Schematic_Schematic_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/BarCodeReader/BarCodeReader/Schematic_Schematic_sch_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to 'C:\Users\Mistakx\Downloads\Xilinx.lic'.
@@ -28,3 +28,4 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+Stopped at time : 887 ns :  in File "E:/BarCodeReader/BarCodeReader/ProfessorMorgadoFixture.v" Line 110 

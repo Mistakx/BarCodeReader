@@ -1,0 +1,12 @@
+[Inputs]
+clock
+reset
+=mainState[2:0]=
+=inputMoney[4:0]=
+=valueToPay[4:0]=
+[Outputs]
+=moneyToGive[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MoneyToGive
+

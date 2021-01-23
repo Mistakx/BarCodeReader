@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-01-21T10:33:49</DateModified>
+  <DateModified>2021-01-23T16:07:51</DateModified>
   <ModuleName>Schematic</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/iseconfig/Schematic.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader\</ImplementationReportsDirectory>
+  <SavedFilePath>E:/BarCodeReader/BarCodeReader/iseconfig/Schematic.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/BarCodeReader/BarCodeReader\</ImplementationReportsDirectory>
   <DateInitialized>2021-01-20T22:04:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

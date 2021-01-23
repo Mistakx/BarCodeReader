@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/CalculateChange.v -lang verilog -prj SD_Project2 -o CalculateChange.spl -module CalculateChange -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 CalculateChange.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/CalculateChange.sym 

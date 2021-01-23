@@ -1,0 +1,12 @@
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.v -lang verilog -prj SD_Project2 -o MoneyToGive.spl -module MoneyToGive -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MoneyToGive.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.sym 
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.v -lang verilog -prj SD_Project2 -o MoneyToGive.spl -module MoneyToGive -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MoneyToGive.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.sym 
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.v -lang verilog -prj SD_Project2 -o MoneyToGive.spl -module MoneyToGive -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MoneyToGive.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.sym 
+vhdtdtfi -lib work C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.v -lang verilog -prj SD_Project2 -o MoneyToGive.spl -module MoneyToGive -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MoneyToGive.spl C:/Users/Mistakx/Desktop/BarCodeReader/BarCodeReader/MoneyToGive.sym 
+vhdtdtfi -lib work E:/BarCodeReader/BarCodeReader/MoneyToGive.v -lang verilog -prj SD_Project2 -o MoneyToGive.spl -module MoneyToGive -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MoneyToGive.spl E:/BarCodeReader/BarCodeReader/MoneyToGive.sym 
+vhdtdtfi -lib work E:/BarCodeReader/BarCodeReader/MoneyToGive.v -lang verilog -prj SD_Project2 -o MoneyToGive.spl -module MoneyToGive -template C:/Tools/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 MoneyToGive.spl E:/BarCodeReader/BarCodeReader/MoneyToGive.sym 
