@@ -1,3 +1,3 @@
-Digital Systems Project 1
+Digital Systems Project 2
 
 Graded in 18.1/20.
